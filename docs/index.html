@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>ES6について</title>
+		<style>
+		@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+		body { font-family: 'Noto Sans Japanese', sans-serif }
+		</style>
+		<link rel="stylesheet" href="./css/reveal.css">
+		<link rel="stylesheet" href="./css/theme/white.css">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="./lib/css/monokai-sublime.css">
+		<link rel="stylesheet" href="./css/index.css">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? './css/print/pdf.css' : './css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<ul id="js-breadcrumb" class="frk-breadcrumb"></ul>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown="./topics/introduction.md" data-separator="^\n---$"
+				data-separator-vertical="^\n>>>$"></section>
+				<!-- ES2015とは -->
+				<section data-markdown="./topics/about_es2015.md" data-separator="^\n---$"
+						data-separator-vertical="^\n>>>$"></section>
+				<!-- ES6のメリット -->
+				<section data-markdown="./topics/merit_of_es6.md" data-separator="^\n---$"
+				data-separator-vertical="^\n>>>$"></section>
+				<!-- ES6での開発 -->
+				<section data-markdown="./topics/develop_on_es6.md" data-separator="^\n---$"
+				data-separator-vertical="^\n>>>$"></section>
+				<!-- ES6 主な変更点 -->
+				<section data-markdown="./topics/additional_changes.md" data-separator="^\n---$"
+            data-separator-vertical="^\n>>>$"></section>
+				<!-- 変数・定数 -->
+				<section data-markdown="./topics/variable_constant.md" data-separator="^\n---$"
+            data-separator-vertical="^\n>>>$"></section>
+				<!-- アロー関数 -->
+				<section data-markdown="./topics/arrow_function.md" data-separator="^\n---$"
+            data-separator-vertical="^\n>>>$"></section>
+				<!-- テンプレート文字列 -->
+				<section data-markdown="./topics/templete_strings.md" data-separator="^\n---$"
+            data-separator-vertical="^\n>>>$"></section>
+				<!-- 2進/8進リテラル(0b/0o) -->
+				<section data-markdown="./topics/binary_octal.md" data-separator="^\n---$"
+            data-separator-vertical="^\n>>>$"></section>
+				<!-- コレクションの繰り返し(for-of) -->
+				<section data-markdown="./topics/for_of.md" data-separator="^\n---$"
+            data-separator-vertical="^\n>>>$"></section>
+				<!-- 分割代入 -->
+				<section data-markdown="./topics/destructuring_assignment.md" data-separator="^\n---$"
+            data-separator-vertical="^\n>>>$"></section>
+				<!-- デフォルト引数(=) -->
+				<section data-markdown="./topics/default_parameters.md" data-separator="^\n---$"
+            data-separator-vertical="^\n>>>$"></section>
+				<!-- スプレッド演算子 -->
+				<section data-markdown="./topics/spread_syntax.md" data-separator="^\n---$"
+            data-separator-vertical="^\n>>>$"></section>
+				<!-- モジュール(import/export) -->
+				<section data-markdown="./topics/module.md" data-separator="^\n---$"
+            data-separator-vertical="^\n>>>$"></section>
+				<!-- オブジェクト定義の簡略化 -->
+				<section data-markdown="./topics/object_definition.md" data-separator="^\n---$"
+            data-separator-vertical="^\n>>>$"></section>
+				<!-- クラス(`class`/`extends`/`super`/`static`) -->
+				<section data-markdown="./topics/class.md" data-separator="^\n---$"
+            data-separator-vertical="^\n>>>$"></section>
+
+				<!-- 型とオブジェクトの追加/変更 -->
+				<section data-markdown="./topics/model_and_syntax_changes.md" data-separator="^\n---$"
+            data-separator-vertical="^\n>>>$"></section>
+				<!-- 基本型の継承 -->
+				<section data-markdown="./topics/can_extends_builtin_class.md" data-separator="^\n---$"
+            data-separator-vertical="^\n>>>$"></section>
+				<!-- シンボル型(Symbol) -->
+				<section data-markdown="./topics/symbol.md" data-separator="^\n---$"
+            data-separator-vertical="^\n>>>$"></section>
+				<!-- コレクション型(`Map`/`Set`/`WeakMap`/`WeakSet`) -->
+				<section data-markdown="./topics/map_set.md" data-separator="^\n---$"
+            data-separator-vertical="^\n>>>$"></section>
+				<!-- Promise -->
+				<section data-markdown="./topics/promise.md" data-separator="^\n---$"
+            data-separator-vertical="^\n>>>$"></section>
+				<!-- Proxy -->
+				<section data-markdown="./topics/proxy.md" data-separator="^\n---$"
+            data-separator-vertical="^\n>>>$"></section>
+				<!-- Iterator -->
+				<section data-markdown="./topics/iterator.md" data-separator="^\n---$"
+            data-separator-vertical="^\n>>>$"></section>
+				<!-- Generator -->
+				<section data-markdown="./topics/generator.md" data-separator="^\n---$"
+				data-separator-vertical="^\n>>>$"></section>
+				<!-- ES7/ES8 -->
+				<section data-markdown="./topics/es7-es8.md" data-separator="^\n---$"
+            data-separator-vertical="^\n>>>$"></section>
+
+			</div>
+		</div>
+
+		<script src="./lib/js/head.min.js"></script>
+		<script src="./js/reveal.js"></script>
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				slideNumber: 'c/t',
+				history: true,
+				keyboard: true,
+				hideAddressBar: true,
+				autoSide: 0,
+				showNotes: false,
+
+				// none/fade/slide/convex/concave/zoom
+				transition: 'convex',
+				// default/fast/slow
+				transitionSpeed: 'default',
+				// none/fade/slide/convex/concave/zoom
+				backgroundTransition: 'default',
+
+				parallaxBackgroundImage: "",
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: './plugin/markdown/marked.js' },
+					{ src: './plugin/markdown/markdown.js' },
+					{ src: './plugin/notes/notes.js', async: true },
+					{ src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+		<script src="./js/jquery-3.1.1.min.js"></script>
+		<script src="./js/slide-helper.js"></script>
+	</body>
+</html>
